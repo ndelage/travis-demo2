@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 1.9.3
+env:
+script:
+  - bundle exec rspec person_spec.rb
+before_script:
+bundler_args: --binstubs=./bundler_stubs
